@@ -1,0 +1,35 @@
+Topic:- Process States in Operating System.
+
+Expected Outcome:- We know about the Process States and all the types of Process States.
+
+Q). What is Process States?
+
+Ans:- Process goes through different states throughout the life cycle which are called process states.
+
+Q). Types of Process States.
+
+Ans:- There are seven types of Process States in Operating System.
+
+      1. New:- A program which is going to be picked up by the OS into the main memory is called a new process.
+      
+      2. Ready:- Whenever a process is created, it directly enters in the ready state, in which, it waits for the CPU to be assigned. 
+         The OS picks the new processes from the secondary memory and put all of them in the main memory.
+         
+      3. Running:- One of the processes from the ready state will be chosen by the OS depending upon the scheduling algorithm.
+         Hence, if we have only one CPU in our system, the number of running processes for a particular time will always be one. 
+         If we have n processors in the system then we can have n processes running simultaneously.
+         
+      4. Block or wait:- From the Running state, a process can make the transition to the block or wait state depending upon the 
+         scheduling algorithm or the intrinsic behavior of the process.
+         
+         When a process waits for a certain resource to be assigned or for the input from the user then the OS move this process to 
+         the block or wait state and assigns the CPU to the other processes.
+         
+      5. Completion or termination:-When a process finishes its execution, it comes in the termination state. All the context of the process
+         (Process Control Block) will also be deleted the process will be terminated by the Operating system.
+         
+      6. Suspend ready:- A process in the ready state, which is moved to secondary memory from the main memory due to lack of the resources 
+         (mainly primary memory) is called in the suspend ready state.
+         
+      7. Suspend wait:-Similar to suspend ready but uses the process which was performing I/O operation and lack of main memory caused them 
+         to move to secondary memory. When work is finished it may go to suspend ready.
